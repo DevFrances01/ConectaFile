@@ -3,21 +3,45 @@
 ## 📁 Estrutura de Pastas
 
 ```text
-meu-projeto-web/
-├── database/                 # Scripts SQL, migrações e dicionários de dados
+ConectaFile/
+├── database/
 │   ├── schema_der_completo.sql
 │   └── dicionario_de_dados_der.sql
-├── docs/                     # Documentação do projeto, DERs e planilhas
+│
+├── docs/
 │   ├── dicionario_de_dados_der.xlsx
 │   └── dicionario_de_dados_der.csv
-├── src/                      # Código-fonte do Front-End (Site)
-│   ├── index.html            # Página principal / Login / App
-│   ├── css/                  # Folhas de estilo
-│   │   └── style.css
-│   ├── js/                   # Scripts JavaScript (lógica de API e front-end)
-│   │   └── app.js
-│   └── assets/               # Recursos visuais e mídias
-│       └── img/              # Imagens, ícones, logos e banners
+│
+├── src/
+│   ├── index.html
+│   ├── logi.html
+│   ├── cadastro.html
+│   ├── css/
+│   │   ├── style.css
+│   │   ├── logi.css
+│   │   └── cadastro.css
+│   ├── js/
+│   │   ├── app.js
+│   │   ├── login.js
+│   │   └── cadastro.js
+│   └── assets/
+│       └── img/
 │           ├── logo.png
 │           └── favicon.ico
-└── README.md                 # Documentação principal e instruções de execução
+│
+├── backend/
+│   ├── manage.py
+│   ├── config/
+│   │   ├── settings.py
+│   │   └── urls.py
+│   └── accounts/
+│       ├── models.py
+│       ├── views.py
+│       └── urls.py
+│
+├── data/
+│   └── db.sqlite3
+│
+├── requirements.txt
+├── .gitignore
+└── README.md
